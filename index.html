@@ -8,21 +8,17 @@
     <script>
         $(function() {
 
-            $(this).click(function() {
-                $('#1st-Q').fadeOut(2000).css({'color': 'green'});
-                var question = 
-                $('#2nd-Q').html("Out of all the countries, what is your favorite place to live or visit in? You Must Choose One");
-                $('#2nd-Q').css({'color': 'blue', 'background-color': 'White', 'font-family': 'Arial'});
-                    // $('#2nd-Q').css('font-family', 'Arial');
+            $('.button').click(function() {
+    
+                $('.container').css({'color': 'blue', 'background-color': 'white', 'font-family': 'Arial'});
+                    $('#1st-Q').html("Out of all the countries, what is your favorite place to live or visit in? You Must Choose One");
+
                       
             });
 
         });
     </script>
     <style>
-        h2 {
-            font-family: "Arial", Georgia, Serif;
-        }
         
         div {
             background: silver;
@@ -30,16 +26,24 @@
             width: 535px;
             padding: 10px;
         }
+        
     </style>
 </head>
 
 <body>
     <div class="container">
         <h1 id="Title">Banner-Gernerator</h1>
-        <h2>Answer number 1 then submitting, then do number .</h2>
-        <h1 id="1st-Q">1) From these choices, what countries would you prefer to lived in? (Any number of countries)</h1>
-        <!--<h1 id="2nd-Q">2) Out of all the countries, what is your favorite place to live or visit in? (You Must Choose One)</h1>-->
-
+        <h2>Answer the first question. then submitting, then answer the next question.</h2>
+        
+        Name:
+            <input type="text" name="name"><br>
+            Airline Choices:
+            <input type="text" name="airline-choices"><br>
+            Number's of People:
+            <input type="text" name="number's-of-people"><br>
+        
+        <h1 id="1st-Q"> Out of these choices, what countries would you prefer to lived in? (Any number of countries)</h1>
+        
         France:
         <input type="checkbox" name="countries 1" value="France"><br> England:
         <input type="checkbox" name="countries 2" value="England"><br> Japan:
